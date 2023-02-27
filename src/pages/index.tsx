@@ -11,11 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div style={{padding:'10rem'}}>
-        <h1>hi</h1>
-        <ul>
+        <h1>Hello World</h1>
+        <ul style={{padding:"1rem"}}>
           <li><Link className='link' href={"login"}>Sign In</Link></li>
           <li><Link className='link' href={"join"}>Sign Up</Link></li>
           <li><Link className='link' href={"counter"}>counter - redux</Link></li>
+          <li><Link className='link' href={"counter-use-hook"}>counter - use - hooks</Link></li>
           <li><Link className='link' href={"todoList"}>Todo List</Link></li>
         </ul>
       </div>
