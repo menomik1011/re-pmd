@@ -8,12 +8,12 @@ export default function LoginForm() {
         <div className={styles.Label_div}>
           <label>Username</label>
         </div>
-        <input type={"text"} />
+        <input type="text" />
         <div>
           <div className={styles.Label_div}>
             <label>Password</label>
           </div>
-          <input type={"text"} />
+          <input type="password" />
         </div>
         <button type="submit">Sign In</button>
       </form>
