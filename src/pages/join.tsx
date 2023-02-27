@@ -1,6 +1,6 @@
 import JoinForm from "@/components/auth/JoinForm";
 
-export default function join() {
+export default function Join() {
   return (
     <JoinForm />
   )
