@@ -1,9 +1,16 @@
-.Wrapper {
-    margin-top: 20vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 40px;
+.Main{
     width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.Header{
+    margin: 60px 0 40px;
+    text-align: center;
+    font-size: 3rem;
+}
+.Wrapper {
+    padding: 20px 40px;
     box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
     border-radius: 0.5rem;
     background-color: #fff;
@@ -45,6 +52,7 @@
 }
 .Form button{
     margin: 0.5rem;
+    margin-top: 1rem;
     margin-left: 0;
     padding: 0.5rem 1rem;
     width: 100%;
@@ -55,8 +63,13 @@
     background-image: linear-gradient(-180deg, rgba(255,255,255,0.18) 0%, rgba(17,17,17,0.08) 100%);
     border: 1px solid rgba(22,22,22,0.20);
 }
-
-.link{
+.Alert{
+    margin: 2rem auto 1rem;
+    display: block;
+    color: #484F59;
+    text-align: center;
+}
+.Link{
     margin: 1rem auto 0.5rem auto;
     display: block;
     color: #484F59;
