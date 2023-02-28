@@ -1,7 +1,9 @@
 import LoginForm, { LoginFormProps } from "@/components/auth/LoginForm";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Login() {
+  const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,8 +15,10 @@ export default function Login() {
   };
   const loginOnSubmit: LoginFormProps["loginOnSubmit"] = (e) => {
     e.preventDefault();
-    console.log({ name: username, password: password });
-  };
+    localStorage.setItem("user", JSON.stringify({ name: username }));
+    console.log("login success!");
+    router.push("/");
+  };  
   return (
     <LoginForm
       username={username}

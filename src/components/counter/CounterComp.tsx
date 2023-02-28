@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 type CounterProps = {
@@ -15,14 +14,11 @@ export default function CounterComp({
   onIncreaseBy,
 }: CounterProps) {
   return (
-    <div style={{ padding: "10rem" }}>
-      <Link href="/" className="link">
-        <h5>go home</h5>
-      </Link>
-      <h1>{count}</h1>
-      <button onClick={onIncrease}>+1</button>
-      <button onClick={onDecrease}>-1</button>
-      <button onClick={() => onIncreaseBy(5)}>+5</button>
-    </div>
+    <>
+      <h1 className="counter">{count}</h1>
+      <button className="counter-btn" onClick={onIncrease}>+1</button>
+      <button className="counter-btn" onClick={onDecrease}>-1</button>
+      <button className="counter-btn" onClick={() => onIncreaseBy(5)}>+5</button>
+    </>
   );
 }
