@@ -1,7 +1,7 @@
 import useCounter from "@/hooks/useCounter";
 import React from "react";
 
-export default function CounterUseHookComp() {
+export default function CounterComponent() {
   const { count, onIncrease, onDecrease, onIncreaseBy } = useCounter();
   return (
     <>

@@ -7,7 +7,7 @@ type CounterProps = {
   onIncreaseBy: (diff: number) => void;
 };
 
-export default function CounterComp({
+export default function CounterComponent({
   count,
   onIncrease,
   onDecrease,

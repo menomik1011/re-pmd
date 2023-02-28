@@ -51,13 +51,13 @@ export default function Home() {
             </>
           )}
           <li>
-            <Link className="link" href={"counter"}>
-              counter - redux
+            <Link className="link" href={"counter/01"}>
+              01. Redux를 이용한 Counter
             </Link>
           </li>
           <li>
-            <Link className="link" href={"counter/counter-use-hook"}>
-              counter - use - hooks
+            <Link className="link" href={"counter/02"}>
+              02. Redux + custom hook을 이용한 Counter
             </Link>
           </li>
           <li>

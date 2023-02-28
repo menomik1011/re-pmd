@@ -1,4 +1,4 @@
-import CounterUseHookComp from "@/components/counter/CounterUseHookComp";
+import CounterComponent from "@/components/counter/02/CounterComponent";
 import Link from "next/link";
 import React from "react";
 
@@ -8,7 +8,7 @@ export default function CounterUseHook() {
       <Link href="/" className="link home">
         <h5>go home</h5>
       </Link>
-      <CounterUseHookComp />
+      <CounterComponent />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import CounterComp from "@/components/counter/CounterComp";
+import CounterComponent from "@/components/counter/01/CounterComponent";
 import { RootState } from "@/modules";
 import { decrease, increase, increaseBy } from "@/modules/counter";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export default function Counter() {
       <Link href="/" className="link home">
         <h5>go home</h5>
       </Link>
-      <CounterComp
+      <CounterComponent
         count={count}
         onIncrease={onIncrease}
         onDecrease={onDecrease}
