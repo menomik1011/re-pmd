@@ -37,3 +37,7 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
+
+.layout{
+  padding: 10rem;
+}

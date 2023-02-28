@@ -35,6 +35,7 @@ type TodoState = Todo[];
 const initialState: TodoState = [
     { id: uuidv4(), text: "Learn React", completed: false },
     { id: uuidv4(), text: "Build a Todo List", completed: false },
+    { id: uuidv4(), text: "Start Learn Typescript", completed: true },
 ]
 
 function todos(state: TodoState = initialState, action: TodosAction) {

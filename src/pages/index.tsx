@@ -18,6 +18,7 @@ export default function Home() {
           <li><Link className='link' href={"counter"}>counter - redux</Link></li>
           <li><Link className='link' href={"counter/counter-use-hook"}>counter - use - hooks</Link></li>
           <li><Link className='link' href={"todo-list"}>Todo List</Link></li>
+          <li><Link className='link' href={"todo-list/todo-use-redux"}>Todo List - use - redux - hooks</Link></li>
         </ul>
       </div>
     </>

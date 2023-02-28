@@ -37,7 +37,7 @@ export default function TodoList() {
     setTodos(updateList);
   };
   return (
-    <div style={{ padding: "10rem" }}>
+    <div className="layout">
       <Link href="/" className="link">
         <h5>go home</h5>
       </Link>
