@@ -17,15 +17,15 @@ import {
 // });
 
 // typesafe-actions 사용후
-const INCREASE = 'counter/INCREASE' ;
-const DECREASE = 'counter/DECREASE' ;
-const INCREASE_BY = 'counter/INCREASE_BY' ;
+const INCREASE = 'counter/INCREASE';
+const DECREASE = 'counter/DECREASE';
+const INCREASE_BY = 'counter/INCREASE_BY';
 
 export const increase = createAction(INCREASE)();
 export const decrease = createAction(DECREASE)();
 export const increaseBy = createAction(INCREASE_BY)<number>();
 
-const actions = {increase, decrease, increaseBy};
+const actions = { increase, decrease, increaseBy };
 
 // typesafe-actions 사용전
 // type CounterAction =
@@ -58,11 +58,17 @@ const initialState: CounterState = {
 //     }
 // }
 
-// typesafe-actions 사용후
+// typesafe-actions 사용후 메서드 체이닝 방식보다 이 방식이 더 가독성이 좋아보여서 사용한다.
 const counter = createReducer<CounterState, CounterAction>(initialState, {
     [INCREASE]: state => ({count: state.count + 1}),
     [DECREASE]: state => ({count: state.count - 1}),
     [INCREASE_BY]: (state, action) => ({count: state.count + action.payload})
 })
+
+// typesafe-actions 사용후 메서드 체이닝 방식
+// const counter = createReducer<CounterState, CounterAction>(initialState)
+//     .handleAction(increase, state => ({ count: state.count + 1 }))
+//     .handleAction(decrease, state => ({ count: state.count - 1 }))
+//     .handleAction(increaseBy, (state, action) => ({ count: state.count + action.payload }))
 
 export default counter;
