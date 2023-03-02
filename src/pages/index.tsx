@@ -70,6 +70,11 @@ export default function Home() {
               Todo List - use - redux - hooks
             </Link>
           </li>
+          <li>
+            <Link className="link" href={"todo-list/todo-use-recoil"}>
+              Todo List - use - recoil
+            </Link>
+          </li>
         </ul>
       </div>
     </>
